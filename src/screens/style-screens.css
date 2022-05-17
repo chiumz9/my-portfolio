@@ -90,7 +90,7 @@
   background: contain;
   width: 40vw;
   max-height: 40vh;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 3%;
   margin: 1% 5%;
 }
@@ -109,8 +109,11 @@
   align-items: center;
 }
 
-.launch-logo:hover+div {
-  background-color: red;
+.launch-logo {
+  width: 20px;
+  padding: .3rem;
+  border: 1px solid lightgrey;
+  border-radius: 1rem;
 }
 
 .contact-container {
