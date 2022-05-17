@@ -3,6 +3,9 @@ import linkedlogo from '../images/linkedinlogo.png'
 import gmaillogo from '../images/gmaillogo.png'
 import githublogo from '../images/githublogo.png'
 
+import resume from '../images/ChiuZhouResume.pdf'
+
+
 export default function Contacts() {
   return (
     <div className="contact-container">
@@ -17,7 +20,7 @@ export default function Contacts() {
           </ul>
         </div>
       </div>
-      <a href="mailto:chiumzhou8@gmail.com">chiumzhou@gmail.com</a>
+      <a href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
     </div>
 
   )

@@ -80,7 +80,7 @@
 
 .project-card {
   display: flex;
-  border: 3px solid red;
+  border: 2px solid red;
   margin: 1rem;
   border-radius: 1rem;
   padding: 2.5rem 0;
@@ -90,7 +90,7 @@
   background: contain;
   width: 40vw;
   max-height: 40vh;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 3%;
   margin: 1% 5%;
 }
@@ -149,12 +149,13 @@
   padding: 2%;
   background-color: red;
   color: white;
-  max-width: 10rem;
-  max-height: 2rem;
+  max-width: 8rem;
+  max-height: 1rem;
   margin-left: 2%;
   align-items: center;
-  border-radius: 2rem;
+  border-radius: 1rem;
   text-decoration: none;
+
 }
 
 .logo {

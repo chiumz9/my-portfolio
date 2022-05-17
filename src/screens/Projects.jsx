@@ -4,7 +4,7 @@ import tohimg from '../images/towerofhanoi.png'
 import peakscout from '../images/peakscout.png'
 import linkedfin from '../images/linkedfin.png'
 
-import launch from '../images/launchlogo16.png'
+import launch from '../images/launchlogo.png'
 
 
 export default function Projects() {
@@ -59,9 +59,7 @@ export default function Projects() {
             with Full CRUD capabilities. Create, Read, Update
             or Delete a gym"
           </p>
-          <div className="launch-logo">
-            <img src={launch} onClick={() => handleClick(peaklnk)} />
-          </div>
+          <img className="launch-logo" src={launch} onClick={() => handleClick(peaklnk)} />
         </div>
       </div>
       <div className='project-card'>
