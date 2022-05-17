@@ -4,8 +4,19 @@ import tohimg from '../images/towerofhanoi.png'
 import peakscout from '../images/peakscout.png'
 import linkedfin from '../images/linkedfin.png'
 
+import launch from '../images/launchlogo16.png'
+
 
 export default function Projects() {
+  const crpytolnk = "https://cosmic-malasada-35de58.netlify.app"
+  const tohlnk = "https://pages.git.generalassemb.ly/asdfzo9/Tower-of-Hanoi/"
+  const peaklnk = "https://earnest-profiterole-786338.netlify.app/"
+  const finlnk = "https://github.com/chiumz9/linkedfin/tree/main"
+
+  function handleClick(target) {
+    console.log(target)
+    javascript: document.location.href = target
+  }
 
   return (
     <div className="projects-container">
@@ -20,6 +31,7 @@ export default function Projects() {
             "Creating a front-end that displays crypto-currency informations
             fed from a third party API from a fellow General Assembly member."
           </p>
+          <img className="launch-logo" src={launch} onClick={() => handleClick(crpytolnk)} />
         </div>
       </div>
       <div className='project-card'>
@@ -29,6 +41,8 @@ export default function Projects() {
             "Reacreation of the classic puzzle. 3 different difficulty levels.
             Tracks the last scores so you can challenge yourself!"
           </p>
+          <img className="launch-logo" src={launch} onClick={() => handleClick(tohlnk)} />
+
         </div>
         <img className="project-image" src={tohimg} />
       </div>
@@ -37,7 +51,7 @@ export default function Projects() {
         <div className='project-description'>
           <div className="project-title">
             <h3>"Peak Scout"</h3>
-            <p>  &nbsp;&nbsp;&nbsp;- group collab. </p>
+            <p> - group collab. </p>
           </div>
           <p>
             "Find the best Rock Climbing Gym in NYC that suits your needs.
@@ -45,19 +59,23 @@ export default function Projects() {
             with Full CRUD capabilities. Create, Read, Update
             or Delete a gym"
           </p>
+          <div className="launch-logo">
+            <img src={launch} onClick={() => handleClick(peaklnk)} />
+          </div>
         </div>
       </div>
       <div className='project-card'>
         <div className='project-description'>
           <div className="project-title">
             <h3>"LinkedFin"</h3>
-            <p>  &nbsp;&nbsp;&nbsp;- group collab. </p>
+            <p> - group collab. </p>
           </div>
           <p>
             "Connect with a fellow programmer. Full-Stack application,
             create your own profile user, add a project and share with
             other fellow "Fin" members"
           </p>
+          <img className="launch-logo" src={launch} onClick={() => handleClick(finlnk)} />
         </div>
         <img className="project-image" src={linkedfin} />
       </div>

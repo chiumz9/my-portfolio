@@ -80,7 +80,7 @@
 
 .project-card {
   display: flex;
-  border: 2px solid red;
+  border: 3px solid red;
   margin: 1rem;
   border-radius: 1rem;
   padding: 2.5rem 0;
@@ -107,6 +107,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.launch-logo:hover+div {
+  background-color: red;
 }
 
 .contact-container {
