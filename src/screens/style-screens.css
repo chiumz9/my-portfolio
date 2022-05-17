@@ -121,6 +121,8 @@
 
 .contact-logo-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-logo {
@@ -147,6 +149,10 @@
   align-items: center;
   border-radius: 2rem;
   text-decoration: none;
+}
+
+.logo {
+  padding: 1rem;
 }
 
 @media screen and (max-width: 700) and (min-width: 0) {
