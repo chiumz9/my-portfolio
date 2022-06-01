@@ -1,5 +1,10 @@
 import './style-screens.css'
 
+import htmllogo from '../images/htmllogo.png'
+import csslogo from '../images/csslogo.png'
+import jslogo from '../images/jslogo.png'
+import pythonlogo from '../images/pythonlogo.png'
+
 export default function Home() {
   return (
     <div className="home-container">
@@ -11,6 +16,12 @@ export default function Home() {
       </div>
       <div className="home-footer">
         <h4 className='header-3'>Full-Stack Developer</h4>
+      </div>
+       <div className="logo-container">
+         <img className="logos" src={htmllogo} />
+         <img className="logos" src={csslogo} />
+         <img className="logos" src={jslogo} />
+         <img className="logos" src={pythonlogo} />
       </div>
     </div>
   )
