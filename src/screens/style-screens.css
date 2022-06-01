@@ -2,6 +2,12 @@
   background-color: #fffefa;
 }
 
+.home-welcome {
+  margin-left: 10%;
+  margin-top: -10%;
+  margin-bottom: -1rem;
+}
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -11,15 +17,24 @@
 }
 
 .home-content {
+  margin: 0 10%;
+  background-color: red;
+  border-radius: 0.5rem;
+  justify-content: center;
+}
+
+.home-footer {
   margin-left: 10%;
-  margin-top: -15%;
+  align-items: center;
+  flex-direction: center;
+  justify-content: center;
 }
 
 .header-1 {
   color: black;
   padding: 1%;
   max-width: 20rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   border: 1px
 }
 
@@ -28,31 +43,30 @@
   flex-direction: column;
   justify-content: center;
   padding: 2%;
-  background-color: red;
   color: white;
-  max-width: 15rem;
+  max-width: 100%;
   border-radius: 0.5rem;
   font-size: xx-large;
   font-style: italic;
-  text-decoration: underline;
+  text-align: center;
 }
 
 .header-3 {
   background-color: grey;
+  align-items: center;
   color: white;
   padding: 1%;
-  max-width: 5rem;
-  border-radius: 5%;
+  max-width: 13rem;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .about-container {
   width: 100vw;
-  border: 0.1px solid black;
 }
 
 .about-header {
-  z-index: 1;
   position: relative;
   margin-bottom: -12%;
   margin-right: -15%;
@@ -72,7 +86,6 @@
 .projects-container {
   display: flex;
   flex-direction: column;
-  border: 0.1px solid black;
   width: 100vw;
   text-align: center;
 
@@ -80,7 +93,7 @@
 
 .project-card {
   display: flex;
-  border: 2px solid red;
+  border: 2px solid lightgrey;
   margin: 1rem;
   border-radius: 1rem;
   padding: 2.5rem 0;
@@ -109,18 +122,11 @@
   align-items: center;
 }
 
-.launch-logo {
-  width: 20px;
-  padding: .3rem;
-  border: 1px solid lightgrey;
-  border-radius: 1rem;
-}
 
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 0.1px solid black;
   width: 100vw;
   height: 100vh;
 }
@@ -161,7 +167,16 @@
 .logo {
   padding: 1rem;
 }
-
+.launch{
+  display: flex;
+}
+.launch-logo {
+  width: 25px;
+  height: 25px;
+  padding: .3rem;
+  border: 1px solid lightgrey;
+  border-radius: 1rem;
+}
 @media screen and (max-width: 700) and (min-width: 0) {
   .project-title {
     flex-direction: column;

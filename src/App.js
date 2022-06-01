@@ -10,17 +10,26 @@ import Contact from './screens/Contact.jsx'
 
 function App() {
 
-  return (
-    <div className="App">
-      <Navbar />
+   return (
+      <div className="App">
+         <div className='navbar-container'>
+            <div id="navbar">
+               <Navbar />
+            </div>
+         </div>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </div>
-  )
+         <div className="screens" id="home"><Home/></div>
+         <div className="screens" id="about"><About/></div>
+         <div className="screens" id="projects"><Projects/></div>
+         <div className="screens" id="contact"><Contact/></div>
+
+         {/* <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+         </Routes> */}
+      </div>
+   )
 }
 export default App;
