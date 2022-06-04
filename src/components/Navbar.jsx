@@ -10,7 +10,9 @@ import Projects from '../screens/Projects.jsx'
 import Contact from '../screens/Contact.jsx'
 
 export default function Navbar() {
+
   const navigate = useNavigate()
+
 
   return (
     <div>
